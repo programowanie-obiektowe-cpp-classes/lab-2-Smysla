@@ -6,9 +6,9 @@ class ResourceManager
 {
     public:
     ResourceManager() {}
+    ResourceManager(const ResourceManager& r) :res{r.res} {}
     ~ResourceManager() {}
     double get() {return res.get();}
 
-    private:
     Resource res{};
 };

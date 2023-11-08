@@ -4,5 +4,9 @@
 
 class ResourceManager
 {
-    // Twoja implementacja tutaj
+    public:
+    double get() {return res.get();}
+
+    private:
+    Resource res;
 };

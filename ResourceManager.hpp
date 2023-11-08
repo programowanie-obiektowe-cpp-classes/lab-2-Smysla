@@ -1,4 +1,4 @@
-t#pragma once
+#pragma once
 
 #include "Resource.hpp"
 

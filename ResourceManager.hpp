@@ -9,9 +9,8 @@ class ResourceManager
     ResourceManager(const ResourceManager& r) :res(new Resource(*(r).res)) {}
     ResourceManager& operator=(const ResourceManager& r)
     {
-        res = new Resource;
         if (this != &r)
-            res=r.res;
+           res=new Resource(*(r).res);
         return *this;
     }
     ~ResourceManager() {delete res;}

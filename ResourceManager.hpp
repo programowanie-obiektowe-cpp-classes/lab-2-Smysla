@@ -1,4 +1,4 @@
-#pragma once
+t#pragma once
 
 #include "Resource.hpp"
 
@@ -14,7 +14,7 @@ class ResourceManager
             res=r.res;
         return *this;
     }
-    ~ResourceManager() {}
+    ~ResourceManager() {delete res;}
     double get() {return (*res).get();}
 
     Resource* res{};

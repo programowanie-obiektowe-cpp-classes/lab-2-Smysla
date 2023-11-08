@@ -6,7 +6,7 @@ class ResourceManager
 {
     public:
     ResourceManager() : res{new Resource} {}
-    ResourceManager(const ResourceManager& r) :res{r.res} {}
+    ResourceManager(const ResourceManager& r) :res(r.res) {}
     ResourceManager& operator=(const ResourceManager& r)
     {
         if (this != &r)

@@ -14,7 +14,7 @@ class ResourceManager
             res=r.res;
         return *this;
     }
-    ~ResourceManager() {delete res;}
+    ~ResourceManager() {}
     double get() {return (*res).get();}
 
     Resource* res{};

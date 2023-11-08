@@ -5,15 +5,15 @@
 class ResourceManager
 {
     public:
-    ResourceManager() {}
+    ResourceManager() : res(new Resource) {}
     ResourceManager(const ResourceManager& r) :res{r.res} {}
     ResourceManager& operator=(const ResourceManager& r)
     {
         res=r.res;
         return *this;
     }
-    ~ResourceManager() {}
+    ~ResourceManager() {delete res;}
     double get() {return res.get();}
 
-    Resource res{};
+    Resource* res{};
 };

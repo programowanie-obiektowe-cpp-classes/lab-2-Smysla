@@ -5,7 +5,7 @@
 class ResourceManager
 {
     public:
-    ResourceManager(Resource r): res(r) {}
+    ResourceManager(): res() {}
     double get() {return res.get();}
 
     private:

@@ -16,5 +16,6 @@ class ResourceManager
     ~ResourceManager() {delete res;}
     double get() {return (*res).get();}
 
+    private:
     Resource* res;
 };

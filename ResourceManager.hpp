@@ -9,7 +9,8 @@ class ResourceManager
     ResourceManager(const ResourceManager& r) : res{new Resource()} {*res=*r.res;}
     ResourceManager& operator=(const ResourceManager& r)
     {
-        //res = new Resource();
+        delete res;
+        res = new Resource();
         *res=*r.res;
         return *this;
     }
